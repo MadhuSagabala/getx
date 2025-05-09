@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_localization/home_page.dart';
+// import 'package:getx_localization/home_page.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
 void main() {
@@ -80,7 +80,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 color: Colors.teal,
               ),
               onPressed: () {
-                Get.to(HomePage());
+                //  Get.to(HomePage());
               },
               label: Text(
                 'Get Started',
