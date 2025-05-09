@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_localization/home_page.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       locale: Get.deviceLocale,
       translations: Messages(),
       fallbackLocale: Locale('en', 'US'),
@@ -29,6 +30,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 int selectindex = 0;
+int indexx = 1;
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
@@ -77,7 +79,9 @@ class _SplashScreenState extends State<SplashScreen> {
                 Icons.forward,
                 color: Colors.teal,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Get.to(HomePage());
+              },
               label: Text(
                 'Get Started',
                 style: TextStyle(fontSize: 24, color: Colors.teal),
