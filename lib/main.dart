@@ -30,7 +30,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 int selectindex = 0;
-int indexx = 1;
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
